@@ -30,8 +30,8 @@ def predict():
 	features=[gk1,gk2,gk3,gk4,gk5,gk6,gk7,gk8,gk9,gk10]
 	values=[np.array(features)]
 	print(values)
-	#model=Load()
-	#y_pred=model.predict(values)
+	model=Load()
+	y_pred=model.predict(values)
 	return render_template('index.html',output='The player predicted score is:{}'.format(y_pred))
 
 if __name__=='__main__':
